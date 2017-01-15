@@ -1,0 +1,23 @@
+doctype 
+html(lang="en")   
+    head
+        title Wordpress Template
+    body
+        #page.site 
+        header.site-header
+        
+            .site-branding
+                h1.site-title 
+                p.site-description
+                
+            include templates/menu
+            block menu 
+            
+        #content.site-content
+            #primary.content-area
+                header
+                    h1.page-title
+                #main.site-main 
+                    
+                    include templates/article
+                    block article

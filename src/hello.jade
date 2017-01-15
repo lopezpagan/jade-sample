@@ -1,0 +1,22 @@
+//include templates/sample 
+
+extends templates/sample
+ 
+block main
+    h3 THIS IS THE MAIN BLOCK 
+         p
+            hr
+
+        - var fruitBold = ['banana', 'apple', 'mango']
+
+        ul.fruit-salad
+
+            each fruit, i in fruitBold
+                li I have #{i + 1} #{fruit}
+
+        p
+            hr 
+            
+block config
+    -var name = 'Tony'
+    

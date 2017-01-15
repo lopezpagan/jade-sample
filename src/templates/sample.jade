@@ -1,0 +1,55 @@
+- var pageTitle = 'Homepage'
+
+block config
+
+doctype
+html(lang="en")
+    head 
+        title #{pageTitle}
+
+    body
+        <h1> #{pageTitle}
+        
+        // 1. Goodbye angle brackets!
+        h2 Hello Jade In Layout.jade
+        p Some Text
+
+        // 2. classes and id's
+        div.box 
+        div#box
+            p My name is #{name}
+
+        // 3. indentation sensitive
+        div.box 
+            h2 Title
+            ul 
+                li
+                    div.wrapper
+                        h2 Title 
+                        p paragraph
+            p my paragraph
+    
+
+        // 4. attributes inside parentheses
+
+        div.box(
+            data-name="box", 
+            id="myBox"
+        ) 
+
+            block main
+
+        p
+            hr 
+
+        - var name = 'Simon'
+
+        h2 #{name}
+
+        p 
+            hr
+
+
+   
+
+
